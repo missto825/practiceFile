@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+*{
+    font-family: 'Nanum Gothic',돋움;
+}
+.tadble{
+    border: solid 5px black;
+    background-color: aqua;
+    width: 1000px;
+}
+.date{
+    margin: 30px;
+    padding: 30px;
+    width: 1000px;
+    background-color: azure;
+    border-radius: 5px;
+    border: double 5px springgreen;
+    text-align: center;
+}
+th,td{
+    border: solid 3px gray;
+}
+thead,tfoot{
+    background-color: aquamarine;
+}
+img{
+    width: 300px;
+}
+a{
+    font-size:30px;
+    
+    text-decoration: none;
+}/*무조건 별슬래시*/
+tr{
+    text-align: center;
+};

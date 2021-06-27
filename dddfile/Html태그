@@ -1,0 +1,83 @@
+<meta> 다양한것들이 존재
+
+<p></p> 단락
+
+<b></b> 택스트 굵게
+
+<i></i> 텍스트 기울기
+
+<u></u> 텍스트 밑줄
+
+<strike></strike> 택스트 취소선
+
+<br/> 줄바꿈
+
+<h1></h1> 제목, 1~6까지로 크기조정
+
+<em></em> 강조, 텍스트 기울기를 포함하며 음성으로 텍스트를 읽을 때 강조해줌
+
+<ruby>
+    한자 <rt> 한자위에 쓸 택스트(뜻과 음)</rt>
+</ruby>
+
+<img src="이미지주소" alt="이미지 설명"/>
+:alt를 넣으면 검색 상단에 뜬다. 꼭 넣자. width나 heigth중 하나만 입력하면 나머진 비율에 알아서 맞춰준다.
+
+<a href="이동할 주소" target="이동 방식" ping="통계 기록을 수집할 프로그램의주소">클릭할 내용</a>
+:target안에 _blank를 넣으면 새창으로 열어 이동, 바로 이동할려면 _self를 입력하면 된다.
+:HTML5부터 ping이 추가됬다. 통계를 수집하기 위해 이용된다.
+
+<oi>
+    <li></li>
+</oi>
+:번호가 붙는 리스트
+
+<ui>
+    <li></li>
+</ui>
+:번호가 붙지 않는 리스트
+
+<form name="폼 태그 이름" method="데이터 전송 방식" action="정보를 보낼 주소"></form>
+:백엔드에서 설명, PHP 파일로 전송해준다.
+
+<input type="타입" name="입력 폼의 이름" maxlength="최대 입력 가능한 글자수" checked/>
+:form안에 쓰이는 태그, 밖에도 쓸수 있다.
+:type="text"이면 텍스트 입력, "password"면 비밀번호 입력, 
+:"checkbox"면 체크박스(checked를 사용해 체크처리를 할수 있다.)
+:"radio"면 체크박스,name이 같은 얘들에 한해 하나만 골를수 있게 된다.
+:"button"이면 버튼, 자바스크립스로 발생하는 기능을 만들수 있다.
+:"file"이면 파일을 업로드할수 있지만, 백엔드의 도움이 필요하다.
+:"search"면 검색어 입력
+:"reset"이면 같은 폼에 입력된 정보를 초기화
+:"submit"이면 폼의 입력값 전송
+:"email"이면 이메일 입력 
+:"url"이면 url 입력
+:"number"이면 숫자 입력
+:"color"이면 색 선택
+:"range"이면 슬라이드 방식의 인터페이스
+:placeholder로 어떠한 내용을 입력해야하는지 알려줄수 있다. placeholder="아이디입력"
+
+<label for="input 태그의 id속성값>명칭</label>
+:<input>태그와 짝을 이룸, 설명을 해줌과 동시에 클릭시 for=에 쓰인 input필드로 이동시켜준다.
+
+<select name="birthMonth">
+    <option value="1">1</option>
+</select>
+:<option>안에 들어가있는 값을 선택한다. <option>을 많이 넣어 선택지 태그로서 활용한다. 주로 생년월일 입력으로 사용한다.
+
+
+<div></div> : block태그, 그 줄 자체를 영역으로 잡는다. 
+
+<span></span> : inline태그, 자기자신만을 영역으로 잡는다.
+
+<header></header> : 사이트의 상단의 영역을 설정할수 있다.
+
+<footer></footer> : 사이트의 하단을 영역으로 설정한다.
+
+<audio>
+    <source src ="오디오 주소" type="audio/확장자">
+</audio>
+:오디오 태그, 오디오 재생을 해준다.
+ 
+ ***
+ <link rel="stylesheet" href="CSS 파일 경로"/>

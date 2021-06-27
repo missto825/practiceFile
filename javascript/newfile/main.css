@@ -1,0 +1,16 @@
+header{
+    background-color: silver;
+    height: 100px;
+}
+footer{
+    background-color: silver;
+    height: 100px;
+}
+#body{
+    background-color: aqua;
+    height: 3000px;
+    padding: 30px;
+}
+#Lily{
+    width: 300px;
+}
