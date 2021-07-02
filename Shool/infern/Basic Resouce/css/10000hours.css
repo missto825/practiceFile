@@ -82,7 +82,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-bottom: 50px;
+    
 }
 .intro .intro_saying{
     font-family: 'OTEnjoystoriesBA';
@@ -167,7 +168,7 @@ button{
 
 /* 결과 로딩 */
 .result_loading{
-     display: none;
+    display: none;
     justify-content: center;
     margin-bottom: 80px;
 }
@@ -267,4 +268,5 @@ button{
     font-size: 10px;
     line-height: 1.5;
     padding: 20px;
+    text-align: center;
 }
