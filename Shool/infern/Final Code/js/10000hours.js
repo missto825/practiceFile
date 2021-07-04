@@ -1,4 +1,3 @@
-
 const startButton = document.querySelector(".start_btn");
 const result = document.querySelector(".result");
 const modal = document.querySelector("#modal");
