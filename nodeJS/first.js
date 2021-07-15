@@ -1,14 +1,16 @@
-const nodemailer = require('nodemailer');
-const email = {
-    "host": "",
-    "port": "",
-    "secure": false,
-    "auth":{
-        "user":"",
-        "pass":""
-    }
-};
+// const nodemailer = require('nodemailer');
+// const email = {
+//     "host": "",
+//     "port": "",
+//     "secure": false,
+//     "auth":{
+//         "user":"",
+//         "pass":""
+//     }
+// };
 
-const send = async (Option) => {
-    nodemailer.createTransport(email)
-};
+// const send = async (Option) => {
+//     nodemailer.createTransport(email)
+// };
+
+const http = require('http');
