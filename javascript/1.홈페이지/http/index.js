@@ -6,3 +6,7 @@ function showError(d = 'dffs'){
 }
 
 showError();
+
+function Ed(){
+    '생성자' = name;
+}
