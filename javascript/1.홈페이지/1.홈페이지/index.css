@@ -1,0 +1,15 @@
+*{
+    cursor: none;
+}
+
+body{
+    background-color: black;
+}
+h1{
+    color:#fff;
+}
+.cursor_item{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
