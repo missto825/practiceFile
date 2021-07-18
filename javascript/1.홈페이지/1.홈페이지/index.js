@@ -9,3 +9,7 @@ window.onload = function(){
         //console.log(e.clientX);
     }
 }
+
+//addEventListener() = 유니티의 이벤트 트리거, 특정한 행동을 포착하면 특정 함수에 보낼수있음
+//("타입",보낼함수,???);
+//없어도 되네 왜 적은거지
