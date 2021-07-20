@@ -1,0 +1,17 @@
+
+body{
+    background-color: black;
+}
+h1{
+    color:#fff;
+}
+.cursor_item{
+    position: absolute;
+    width: 4000px;
+    height: 2000px;
+    top: -800px;
+    left: -1800px;
+    transition: all .5s ease;
+    opacity: 0.3;
+    /* transition: all .5s cubic-bezier(0.570, -0.140,0.345,1.225); */
+}
