@@ -1,0 +1,6 @@
+window.innerWidth : 창의 넓이
+window.innerHeiht : 창의 놃이
+
+활용 예 : x = (e.clientX - window.innerWidth / 2);;
+         y = (e.clientY - window.innerHeight / 2);
+         중심을 나타냄
