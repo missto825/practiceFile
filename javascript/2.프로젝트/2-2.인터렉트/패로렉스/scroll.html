@@ -10,7 +10,18 @@
             height:10000px;
             background:linear-gradient(150deg,red,orange,yellow,indigo,purple,black);
         }
+        h1{
+            color :#fff;
+        }
     </style>
+    <script>
+        let scrollTop = 0;
+        
+        window.addEventListener("scroll",function(){
+            scrollTop = document.documentElement.scrollTop;
+            console.log("스크롤값 : " + scrollTop)
+        },false);
+    </script>
 </head>
 <body>
     <h1>스크롤</h1>
