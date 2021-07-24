@@ -1,0 +1,4 @@
+let num = 10;
+
+num.toString(2) //2를쓰면 2진수가 된다
+num.toString(16) //16를 쓰면 16진수가 된다.
