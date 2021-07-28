@@ -1,0 +1,17 @@
+.ye{
+    background-color: yellow;
+}
+
+
+.alert-box {
+    background: rgba(2, 34, 33, 0.631);
+    color: rgb(94, 255, 0);
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 10px;
+  }
+  
+  .alert-box p{
+    display: inline;
+  }

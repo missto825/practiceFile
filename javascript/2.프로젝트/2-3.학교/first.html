@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>  
+    <div class="alert-box" id="alert"> 
+        <p id="title"> Alert 박스 </p>
+        <button onclick="document.getElementById('alert').style.display='none';"> 닫기1 </button>
+        <button id='close'> 이벤트 닫기2 </button>
+        <button id='close3'> 이벤트 닫기3 </button>
+    </div>
+
+    <button onclick="n_alert('아이디를 입력하세요')">버튼1</button>
+    <button onclick="n_alert('비번을 입력하세요')">버튼2</button><BR><br><br>
+    
+    <button onclick="n_alert2('red','아이디를 입력하세요')">버튼3</button>
+    <button onclick="n_alert2('pink','비번을 입력하세요')">버튼4</button>
+
+    <h4 id ="test" class="test1">안녕하세요</h4>
+    <h4 id="test2" class="test3" style="color:blue">전 이수환인데 왜 삼상이 인사할까요</h4>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<script src="./first.js"></script>
+<script src="./jq.js"></script>
+    
+</body>
+</html>
