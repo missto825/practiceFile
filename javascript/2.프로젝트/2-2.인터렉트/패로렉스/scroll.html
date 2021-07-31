@@ -13,17 +13,51 @@
         h1{
             color :#fff;
         }
+        .progress{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            height: 5px;
+            left: 0;
+            background-color: black;
+            z-index:10;
+            display: none;
+        }
+        .bar{
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            top: 0;
+            left: 0;
+            background-color: aqua;
+            z-index: 11;
+        }
     </style>
     <script>
+        let progress;
+        let bar;
         let scrollTop = 0;
+
+        window.onload = function(){
+            bar =document.getElementsByClassName("bar")[0];
+            progress = document.getElementsByClassName("progress")[0];
+        }
         
         window.addEventListener("scroll",function(){
+            progress.style.display = "block"
             scrollTop = document.documentElement.scrollTop;
-            console.log("스크롤값 : " + scrollTop)
+            //console.log("스크롤값 : " + scrollTop)
+
+            let per = Math.ceil(scrollTop / (document.body.scrollHeight - window.outerHeight) * 100);
+            console.log(per);
+            bar.style.width = per + "%";
         },false);
     </script>
 </head>
 <body>
     <h1>스크롤</h1>
+    <div class="progress">
+        <span class="bar"></span>
+    </div>
 </body>
 </html> 
