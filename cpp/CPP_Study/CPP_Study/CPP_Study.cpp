@@ -14,9 +14,9 @@ wchar_t wch = L'안'; //2바이트가 됨
 // \n = 아스키코드 10 LineFeed (한줄 아래로(
 int main()
 {
-    cout << wch << endl;
-    //cout은 char전용 한국어를 암시해줘야함
-    wcout.imbue(locale("kor"));
-    wcout << wch << endl;
-    cout << "Hello World!" << endl;
+
+#pragma region 사칙연산 
+	//pragma region ..pragma endregion으로 열고닫을수 있음. 비주얼스튜디오의 기능
+
+#pragma endregion
 }
