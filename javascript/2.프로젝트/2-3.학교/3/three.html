@@ -12,14 +12,29 @@
     <link rel="stylesheet" href='./main.css'>
   </head>
   <body>
+
+    <div class="left-menu">
+        <p>Menu Title</p>
+    </div>
+    <!-- <div id="hi">안녕하세요요용 어지러워요요요용</div> -->
     <div class="back-background">
         <div class="white-background">
             <p>로그인 하세욧</p>
-            <button class="button">닫기</button>
             
+            <form action="login.php">
+                <div class= "form-group">
+                    <input type="email" class="form-control" placeholder="Email" id="email"> 
+                    <p id="email-alert">님 이메일이 빈칸임. ㅅㄱ바위</p>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" id="pwd">
+                    <p id="pwd-alert">님 비번이 빈칸임. ㅅㄱ바위</p>
+                </div>
+                <button type="submit" class="btn btn-primary">전송</button>
+            </form>
+            <button class="button">닫기</button>
         </div>
     </div>
-    
     <div class="nav-menu">
         <h4>samil stdio</h4>
         <a class="Products">Products</a>
@@ -35,8 +50,11 @@
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Log in</a>
+        <a id="show-menu" class="btn btn-danger btn-lg" href="#" role="button">Show Menu</a>
     </div>
+
+    <input type="text" id="login-test">
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -55,14 +73,36 @@
     -->
     
     <script>
-        
+
         $('.btn-lg').click(function(){
-            $('.nav-sub').hide();
+            if($('#login-test').val()=== '안녕하세요' || $('#login-test').val()=== ''){
+                $('.white-background').animate({marginTop:'200px'});
+                $('.back-background').show();
+            }
         });
-        
+        $('form').on('submit',function(e){
+            if($('#email').val() == "")
+            {
+                $('#email-alert').show();
+                e.preventDefault();
+            }
+            if($('#pwd').val() == "")
+            {
+                $('#pwd-alert').show();
+                e.preventDefault();
+            }
+        })
         $('.Products').click(function(){
             $('.nav-sub').fadeToggle();
         });
+        $('.button').click(function(){
+            $('.back-background').hide();
+        })
+
+        // $('#hi').animate({marginLeft:'100px',marginTop:'100px'});
+    $('#show-menu').on('click',function(){
+        $('.left-menu').animate({marginLeft:'0px'});
+    })
     </script>
   </body>
 </html>
