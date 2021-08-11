@@ -1,2 +1,3 @@
 ﻿  CPP_Study.cpp
-  CPP_Study.vcxproj -> C:\Makers\Web\First\practiceFile\cpp\CPP_Study\Debug\CPP_Study.exe
+C:\Users\suhwa\Documents\GitHub\practiceFile\cpp\CPP_Study\CPP_Study\CPP_Study.cpp(205,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CPP_Study.vcxproj -> C:\Users\suhwa\Documents\GitHub\practiceFile\cpp\CPP_Study\Debug\CPP_Study.exe
